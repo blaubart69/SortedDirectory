@@ -48,7 +48,7 @@ public class testSortedDir {
 		// create a file in a subdir. should not be listed
 		tempFold2.newFile("bumsti.txt");
 		
-		Collection<String> files = new SortedDirectory().getFilesSortedByLastModified(
+		Collection<String> files = DirectoryUtils.getFilesSortedByLastModified(
 				tempFold1.getRoot().getAbsolutePath());
 		
 		assertArrayEquals(

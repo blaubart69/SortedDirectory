@@ -10,16 +10,13 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 import java.util.Collection;
-import java.util.EnumSet;
 import java.util.HashSet;
-import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import java.util.concurrent.ConcurrentSkipListMap;
 
-public class SortedDirectory {
+public class DirectoryUtils {
 
-	public Collection<String> getFilesSortedByLastModified(final String directory) throws IOException {
+	public static Collection<String> getFilesSortedByLastModified(final String directory) throws IOException {
 		
 		final SortedMap<FileTime, String> sortedMap = new TreeMap<>();
 		
