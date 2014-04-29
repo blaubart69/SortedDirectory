@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+.idea/
+*.vsp
+*.suo
+*.psess
